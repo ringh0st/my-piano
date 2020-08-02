@@ -11,11 +11,16 @@ function App() {
     margin:0;
   `
   return (
-    <Container>
-      <Header/>
-      <SongList/>
-      <SongDetail/>
-    </Container>
+    <div className="ui container grid">
+      <div className="ui row">
+      <Container className="column eight wide" >
+        <Header/>
+        <SongList/>
+        <SongDetail/>
+      </Container>
+      </div>
+    </div>
+
   );
 }
 
