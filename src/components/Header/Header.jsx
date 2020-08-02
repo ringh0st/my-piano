@@ -4,7 +4,7 @@ import {NavLinks} from './Header.style';
 
 const Header = () => {
     const links = ['Home','News','Contact','About'];
-    const renderLinks = links.map(link=><Button text={link}/>)
+    const renderLinks = links.map(link=><Button key={link} text={link}/>)
     return (
         <>
             <NavLinks>

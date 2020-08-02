@@ -1,7 +1,9 @@
 import React from 'react';
 import Header from './components/Header/Header';
-import Piano from './components/Piano/Piano';
-import styled from 'styled-components';
+import SongList from './components/SongList/SongList';
+import SongDetail from './components/SongDetail/SongDetail';
+import styled from 'styled-components'; //default export
+import {selectSong} from './actions'; //name export
 
 function App() {
   const Container = styled.div`
@@ -11,7 +13,8 @@ function App() {
   return (
     <Container>
       <Header/>
-      <Piano/>
+      <SongList/>
+      <SongDetail/>
     </Container>
   );
 }
