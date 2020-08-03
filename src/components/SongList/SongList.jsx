@@ -22,6 +22,7 @@ class SongList extends Component {
         console.log(this.props);
         return(
             <>
+            <h3>Songs List</h3>
             <div className="ui devided list">{this.renderList()}</div>
         </>
         )

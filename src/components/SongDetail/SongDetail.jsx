@@ -7,9 +7,10 @@ const SongDetail = ({song}) =>{
     }
 return (
     <div>
-        <div>Detail for:</div>
-        <div>{song.title}</div>
-        <div>{song.duration}</div>
+        <h3>Detail for:</h3>
+        <div>Title: {song.title}</div>
+        <br/>
+        <div>Duration: {song.duration}</div>
 
     </div>
 )
