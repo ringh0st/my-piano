@@ -6,13 +6,9 @@ export const selectSong = (song)=>{
         payload:song
     };
 };
-export const fetchLyrics = ()=>{
-    return function(dispatch, getState){
+export const fetchLyrics = ()=> async dispatch =>{
         const promise = musixmatch.get('');
-        return{
-            type:'FETCH_LYRICS',
-            payload:promise
-        };
+        dispatch({type:'FETCH_LYRICS',payload:promise})               
     }
 
-};
+
