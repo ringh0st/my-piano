@@ -17,6 +17,7 @@ const selectedSongReducer =(selectedSong=null, action)=>{
 };
 
 export default combineReducers({
+    //you can put a dummy function untill you write your reducers in the beginning of the app
     songs:songsReducer,
     selectedSong:selectedSongReducer
 })
