@@ -19,7 +19,7 @@ class SongList extends Component {
         }))
     }
     render(){
-        console.log(this.props);
+        // console.log(this.props);
         return(
             <>
             <h3>Songs List</h3>
@@ -29,7 +29,7 @@ class SongList extends Component {
     }
 }
 const mapStateToProps=(state)=>{
-    console.log(state);
+    // console.log(state);
     return {songs:state.songs};
 }
 export default connect(mapStateToProps,

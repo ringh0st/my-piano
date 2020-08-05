@@ -5,16 +5,21 @@ import {fetchLyrics} from '../../actions';
 class LyricsList extends React.Component{
     componentDidMount(){
         this.props.fetchLyrics();
-        console.log(this.props);
+
     }
     render(){
+        console.log(this.props);
         return(
             <h2>Lyrics:</h2>
         )
     }
 }
-
+const mapStateToProps = (state)=>{
+    return{
+        lyrics:state.lyrics
+    }
+}
 export default connect(
-    null,
+    mapStateToProps,
     {fetchLyrics}
     )(LyricsList);
