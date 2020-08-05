@@ -1,4 +1,5 @@
 import {combineReducers} from 'redux';
+import lyricsReducer from './lyricsReducer';
 const songsReducer =()=>{
     return[
         {title:'No Scrubs',artist:'TLC',duration:'3:34'},
@@ -18,5 +19,6 @@ const selectedSongReducer =(selectedSong=null, action)=>{
 export default combineReducers({
     //you can put a dummy function untill you write your reducers in the beginning of the app
     songs:songsReducer,
-    selectedSong:selectedSongReducer
+    selectedSong:selectedSongReducer,
+    lyrics:lyricsReducer
 })
