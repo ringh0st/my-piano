@@ -1,11 +1,10 @@
 import {combineReducers} from 'redux';
 const songsReducer =()=>{
     return[
-        {title:'No Scrubs',duration:'4:05'},
-        {title:'Underdog',duration:'3:50'},
-        {title:'All Star',duration:'3:10'},
-        {title:'I Want It That Way',duration:'3:15'},
-
+        {title:'No Scrubs',artist:'TLC',duration:'3:34'},
+        {title:'Underdog',artist:'Alicia Keys',duration:'3:28'},
+        {title:'All Star',artist:'Smash Mouth',duration:'3:20'},
+        {title:'I Want It That Way',artist:'Backstreet Boys',duration:'3:33'},
     ]
 };
 

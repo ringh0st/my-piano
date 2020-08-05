@@ -5,6 +5,7 @@ import {fetchLyrics} from '../../actions';
 class LyricsList extends React.Component{
     componentDidMount(){
         this.props.fetchLyrics();
+        console.log(this.props);
     }
     render(){
         return(

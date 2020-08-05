@@ -10,6 +10,8 @@ return (
         <h3>Detail for:</h3>
         <div>Title: {song.title}</div>
         <br/>
+        <div>Artist: {song.artist}</div>
+        <br/>
         <div>Duration: {song.duration}</div>
 
     </div>
