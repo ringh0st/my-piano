@@ -7,7 +7,7 @@ export const selectSong = (song)=>{
     };
 };
 export const fetchLyrics = ()=> async dispatch =>{
-        const promise = musixmatch.get('');
+        const promise = musixmatch.get('/posts');
         dispatch({type:'FETCH_LYRICS',payload:promise})               
     }
 
