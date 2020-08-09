@@ -6,11 +6,18 @@ class UserHeader extends React.Component{
         this.props.fetchUser(this.props.userId)
     }
     render(){
-        console.log(this.props);
+        const user=this.props.users.find((user)=>user.id === this.props.userId)
+        console.log(user);
 
         return(
-            <div>UserHeader</div>
+            <div>{this.props.userId}</div>
         )
+    }
+
+}
+const mapStateToProps=(state)=>{
+    return{
+        users:state.users
     }
 }
 export default connect(null,{fetchUser})(UserHeader);
