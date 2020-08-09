@@ -19,12 +19,12 @@ function App() {
       {/* </Container> */}
     <div className="ui container grid">
       <div className="ui row">
-      <Container className="column eight wide" >
+      {/* <Container className="column eight wide" >
         <SongList/>
       </Container>
       <Container className="column eight wide" >
         <SongDetail/>
-      </Container>
+      </Container> */}
       <Container className="column eight wide" >
       <LyricsList/>
       </Container>

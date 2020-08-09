@@ -7,8 +7,12 @@ export const selectSong = (song)=>{
     };
 };
 export const fetchLyrics = ()=> async dispatch =>{
-        const response = await musixmatch.get('/posts');
-        dispatch({type:'FETCH_LYRICS',payload:response.data})               
-    }
+    const response = await musixmatch.get('/posts');
+    dispatch({type:'FETCH_LYRICS',payload:response.data})               
+}
+export const fetchUser = (id)=> async dispatch =>{
+    const response = await musixmatch.get(`/users/${id}`);
+    dispatch({type:'FETCH_USER',payload:response.data})               
+}
 
 
