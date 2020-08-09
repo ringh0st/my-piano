@@ -1,7 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {fetchLyrics} from '../../actions';
-
+import UserHeader from '../UserHeader/UserHeader';
 class LyricsList extends React.Component{
     componentDidMount(){
         this.props.fetchLyrics(); 
@@ -17,6 +17,7 @@ class LyricsList extends React.Component{
                             <h2>{post.title}</h2>
                             <p>{post.body}</p>
                         </div>
+                        <UserHeader userId={post.userId}/>
                     </div>
                 </div>
             )
