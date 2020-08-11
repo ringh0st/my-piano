@@ -28,7 +28,7 @@ class LyricsList extends React.Component{
         // console.log(this.props);
         return(
             <>
-            <h2>Lyrics:</h2>
+            <h2>Posts:</h2>
         <div className="ui relaxed divided list">{this.renderList()}</div>
         </>
         )
