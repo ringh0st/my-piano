@@ -1,9 +1,9 @@
 import React from 'react';
 import Header from './components/Header/Header';
-import SongList from './components/SongList/SongList';
-import SongDetail from './components/SongDetail/SongDetail';
+// import SongList from './components/SongList/SongList';
+// import SongDetail from './components/SongDetail/SongDetail';
 import styled from 'styled-components'; //default export
-import {selectSong} from './actions'; //name export
+// import {selectSong} from './actions'; //name export
 import LyricsList from './components/LyricsList/LyricsList';
 
 function App() {

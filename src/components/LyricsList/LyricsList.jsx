@@ -1,10 +1,10 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {fetchLyrics} from '../../actions';
+import {fetchPostsAndUsers} from '../../actions';
 import UserHeader from '../UserHeader/UserHeader';
 class LyricsList extends React.Component{
     componentDidMount(){
-        this.props.fetchLyrics(); 
+        this.props.fetchPostsAndUsers(); 
     }
 
     renderList(){
@@ -25,7 +25,7 @@ class LyricsList extends React.Component{
     }
 
     render(){
-        console.log(this.props);
+        // console.log(this.props);
         return(
             <>
             <h2>Lyrics:</h2>
@@ -41,5 +41,5 @@ const mapStateToProps = (state)=>{
 }
 export default connect(
     mapStateToProps,
-    {fetchLyrics}
+    {fetchPostsAndUsers}
     )(LyricsList);
